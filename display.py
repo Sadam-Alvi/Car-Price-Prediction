@@ -69,7 +69,7 @@ for col in cat_cols:
     
     user_input[col] = st.selectbox(
         label=f"{col}",
-        options=unique_vals.capitalize(),
+        options=[v.capitalize() for v in unique_vals],,
         key=col
     )
 
